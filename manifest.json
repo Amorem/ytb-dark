@@ -16,10 +16,21 @@
             ],
             "matches": [
                 "https://*.youtube.com/*"
-            ]
+            ],
+            "run_at": "document_end"
         }
     ],
     "permissions": [
-        "bookmarks"
-    ]
+        "bookmarks",
+        "storage"
+    ],
+    "icons": {
+        "16": "FreeIcon.png",
+        "48": "FreeIcon.png",
+        "128": "FreeIcon.png"
+    },
+    "browser_action": {
+        "default_title": "Youtube Dark Mode",
+        "default_popup": "popup.html"
+    }
 }
